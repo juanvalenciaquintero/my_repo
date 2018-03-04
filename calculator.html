@@ -14,18 +14,27 @@
 
 			}
 
+
 			function seno() {
 
 				var num = document.getElementById("n1");
 
 				num.value = Math.sin(num.value);
+			}
+
+			function fourth() {
+
+				var num = document.getElementById("n1");
+
+				num.value = Math.pow(num.value, 4);
+
 
 			}
 
 		</script>
 
 		<style>
-			div {
+			#envoltorio {
 				width:500px;
 				height:300px;
 				background-color:lightgrey;
@@ -45,7 +54,7 @@
 
 <body>
 
-	<div>
+	<div id="envoltorio">
 
 		<h1>Calculadora de Juan Antonio Valencia Quintero</h1>
 
@@ -53,9 +62,16 @@
 
 		<input type="text" id="n1">
 
-		<button onclick="cube()"> x^3 </button>
+		<div id="botones">
 
-		<button onclick="seno()">sin(x) </button>
+			<button onclick="cube()"> x^3 </button>
+			
+			<button onclick="fourth()"> x^4 </button>
+
+			<button onclick="seno()">sin(x) </button>
+
+
+		</div>
 
 	</div
 
